@@ -128,7 +128,7 @@ p {
     color: white;
     transition: 0.2s background ease;
     font-size: 17px;
-    padding: 15px 40px;
+    padding: 15px 20px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 15px;
@@ -175,7 +175,6 @@ p {
 }
 
 .button-black span {
-    padding: 18px 0;
     font-size: 17px;
 }
 
@@ -190,7 +189,7 @@ p {
 
 .section-middle {
     text-align: center;
-    background: url(images/23.jpg);
+    background: linear-gradient(to top, #dfe6ea, #d2d2d2);
     background-size: cover;
 }
 
@@ -222,7 +221,7 @@ p {
 
 .named {
     text-align: center;
-    font-size: 40px;
+    font-size: 25px;
     overflow: hidden;
     margin-bottom: 40px
 }
@@ -258,8 +257,18 @@ p {
     text-align: center;
 }
 
-.custom_box h1 {
+.custom_box .header, .custom_box .header a {
     color: rgba(105, 105, 105, 1);
+}
+
+.custom_box p {
+    color: rgb(102, 102, 102) !important;
+}
+
+.section-bottom .row a.custom_box {
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .custom_box img {
@@ -268,8 +277,13 @@ p {
     height: 70px;
 }
 
-.custom_box h1 {
-    font-size: 25px;
+.custom_box .header {
+    font-size: 20px;
+    padding: 8px 0;
+}
+
+.custom_box:hover .header {
+    text-decoration: underline;
 }
 
 .custom_box p {
