@@ -400,6 +400,7 @@ footer .link a {
     text-decoration: underline;
 }
 
+
 .sm-center {
     margin: 0 auto;
     text-align: center;
@@ -429,45 +430,11 @@ footer .link a {
     }
 }
 
-@media (max-width: 767px) {
-
-    .button {
-        font-size: 16px;
-    }
-
-
-    .button {
-        padding: 0 16px;
-    }
-
-    .button span {
-        font-size: 16px;
-        padding: 13px 0;
-    }
-
-    .button i {
-        font-size: 22px;
-    }
-}
 
 @media (max-width: 557px) {
-    .button {
-        padding: 0 16px;
+
+    .centered-mobile {
+        text-align: center !important;
     }
 
-    .button span {
-        font-size: 15px;
-        padding: 13px 0;
-    }
-
-    .button i {
-        font-size: 16px;
-    }
-}
-
-@media (max-width: 444px) {
-    .button span {
-        font-size: 10px;
-        padding: 13px 0;
-    }
 }
