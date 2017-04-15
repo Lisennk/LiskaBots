@@ -228,6 +228,7 @@ p {
 
 .named h1 {
     position: relative;
+    font-size: 20px !important;
     background: #fff;
     display: inline !important;
 }
