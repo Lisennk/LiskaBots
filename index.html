@@ -73,8 +73,8 @@
 			<h1><strong>Создание уникальных и вирусных ботов для групп ВКонтакте</strong></h1>
 			<div class="top-header">Кроме повышения статистики вашего сообщества в 2 раза, мы гарантируем, что ваш бот никогда не будет лагать: мы выдержали нагрузку с MDK, Орленка и других. Наша команда уже сделала боты для десятков крупнейших пабликов. Станьте счастливым администратором и вы!</div>
 			<div class="top-header"><i>Напишите нам, чтобы обсудить сроки реализации вашей идеи и цену:</i></div>
-			<a href="https://vk.me/liskabots" target="_blank" class="button visible-md-inline-block visible-lg-inline-block hidden-sm hidden-xs"><i class="fa fa-commenting-o"></i><span>Заказать или получить бесплатную консультацию</span></a>
-			<a href="https://vk.me/liskabots" target="_blank" class="button visible-xs-inline-block visible-sm-inline-block hidde-md hidden-lg"><i class="fa fa-commenting-o"></i><span>Заказать или спросить</span></a>
+			<a data-role="contact" href="https://vk.me/liskabots" target="_blank" class="button visible-md-inline-block visible-lg-inline-block hidden-sm hidden-xs"><i class="fa fa-commenting-o"></i><span>Заказать или получить бесплатную консультацию</span></a>
+			<a data-role="contact" href="https://vk.me/liskabots" target="_blank" class="button visible-xs-inline-block visible-sm-inline-block hidde-md hidden-lg"><i class="fa fa-commenting-o"></i><span>Заказать или спросить</span></a>
 
 		</div>
 	</div>
@@ -109,7 +109,7 @@
 					<h4>Факт: 100% наших клиентов остались довольны и 72% сделали повторный заказ.</h4>
 				</div>
 				<div class="col-md-5 sm-center">
-					<a href="https://vk.me/liskabots" class="button button-white"><i class="fa fa-commenting-o"></i><span>Заказать бота</span></a>
+					<a data-role="contact" href="https://vk.me/liskabots" class="button button-white"><i class="fa fa-commenting-o"></i><span>Заказать бота</span></a>
 				</div>
 			</div>
 		</div>
@@ -155,8 +155,8 @@
 		</div>
 		</div>
 		<div class="button_centered">
-		<a href="https://vk.com/liskabots" target="_blank" class="button button-black visible-md-inline-block visible-lg-inline-block hidden-sm hidden-xs"><i class="fa fa-heart-o"></i><span>Больше примеров и кейсов в нашей группе ВКонтакте </span></a>
-			<a href="https://vk.com/liskabots" target="_blank" class="button button-black visible-xs-inline-block visible-sm-inline-block hidde-md hidden-lg"><i class="fa fa-heart-o"></i><span>Ещё примеры и кейсы у нас ВКонтакте</span></a>
+		<a data-role="contact" href="https://vk.com/liskabots" target="_blank" class="button button-black visible-md-inline-block visible-lg-inline-block hidden-sm hidden-xs"><i class="fa fa-heart-o"></i><span>Больше примеров и кейсов в нашей группе ВКонтакте </span></a>
+		<a data-role="contact" href="https://vk.com/liskabots" target="_blank" class="button button-black visible-xs-inline-block visible-sm-inline-block hidde-md hidden-lg"><i class="fa fa-heart-o"></i><span>Ещё примеры и кейсы у нас ВКонтакте</span></a>
 
 		</div>
 	</div>
@@ -170,7 +170,7 @@
 			<div class="col-md-4 centered-mobile cons-right">
 				<h4 class="centered-mobile">Есть вопросы?</h4>
 				<h4 class="centered-mobile">Спросите, что интересно</h4>
-				<a href="https://vk.me/liskabots" target="_blank" class="button button-white"><i class="fa fa-commenting-o"></i><span>Получить консультацию</span></a>
+				<a href="https://vk.me/liskabots" data-role="contact" target="_blank" class="button button-white"><i class="fa fa-commenting-o"></i><span>Получить консультацию</span></a>
 			</div>
 		</div>
 	</div>
@@ -197,5 +197,15 @@
 	VK.Widgets.CommunityMessages("vk_community_messages", 141815415, {expandTimeout: "20000",tooltipButtonText: "Есть вопрос или нужна бесплатная консультация прямо сейчас? Жми!"});
 	</script>
 </footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="js/bootstrap.js"></script>
+<!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter44231159 = new Ya.Metrika({ id:44231159, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/44231159" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+<script type="text/javascript">
+	$('[data-role="contact"]').click(function() {
+        console.log(yaCounter44231159.reachGoal('CONTACT'));
+        console.log('goal reached')
+	});
+
+</script>
+
 </html>

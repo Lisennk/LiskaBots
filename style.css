@@ -47,6 +47,10 @@ body {
     font-family: 'RobotoRegular', arial, sans-serif, vardana;
 }
 
+a:active {
+    color: white !important;
+}
+
 h1, h2, h3, h4, h5, .middle-header, .top-header {
     padding: 5px 0;
 }
